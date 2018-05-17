@@ -1,0 +1,38 @@
+/* Hide horizontal tabs at the top of the window */
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar {
+    opacity: 0;
+    pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+/* Hide the "Tree Style Tab" header at the top of the sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    display: none;
+}
+/* Recreates the basic functionality of the popular Roomy Bookmarks Toolbar add-on:
+Hide bookamrks bar items label text, icons are centered. */
+#navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(#nav-bar) {
+    padding: 0 !important;
+}
+#PlacesToolbarItems > box {
+    display: inline-block !important;
+    text-align: center !important;
+}
+toolbarbutton.bookmark-item box {
+    text-align: left !important;
+}
+#personal-bookmarks #PlacesToolbar toolbarseparator{
+    -moz-appearance: none !important;
+    display: inline;
+    border-left: 1px solid ThreeDShadow !important;
+    border-right: 1px solid ThreeDHighlight !important;
+    vertical-align: super;
+}
+.bookmark-item > .toolbarbutton-text {
+    display: none !important;
+}
+.bookmark-item > .toolbarbutton-icon {
+    margin: 0 !important;
+    padding-top: 0 !important;
+}
