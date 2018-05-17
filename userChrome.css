@@ -29,10 +29,10 @@ toolbarbutton.bookmark-item box {
     border-right: 1px solid ThreeDHighlight !important;
     vertical-align: super;
 }
-.bookmark-item > .toolbarbutton-text {
+#personal-bookmarks .bookmark-item > .toolbarbutton-text {
     display: none !important;
 }
-.bookmark-item > .toolbarbutton-icon {
+#personal-bookmarks .bookmark-item > .toolbarbutton-icon {
     margin: 0 !important;
     padding-top: 0 !important;
 }
